@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculater.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" class="display" readonly>
+        <div class="keys">
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+            <button onclick="RemoveLastDisplay()" class="operator-btn">AC</button>
+            <button onclick="displayKeys('%')" class="operator-btn">%</button>
+            <button onclick="displayKeys('/')" class="operator-btn">/</button>
+            <button onclick="displayKeys('7')">7</button>
+            <button onclick="displayKeys('8')">8</button>
+            <button onclick="displayKeys('9')">9</button>
+            <button onclick="displayKeys('*')" class="operator-btn">*</button>
+            <button onclick="displayKeys('4')">4</button>
+            <button onclick="displayKeys('5')">5</button>
+            <button onclick="displayKeys('6')">6</button>
+            <button onclick="displayKeys('-')" class="operator-btn">-</button>
+            <button onclick="displayKeys('1')">1</button>
+            <button onclick="displayKeys('2')">2</button>
+            <button onclick="displayKeys('3')">3</button>
+            <button onclick="displayKeys('+')" class="operator-btn">+</button>
+            <button onclick="displayKeys('0')">0</button>
+            <button onclick="displayKeys('.')">.</button>
+            <button onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="calculater.js"></script>
+</body>
+
+</html>
